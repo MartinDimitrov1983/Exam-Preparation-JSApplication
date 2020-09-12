@@ -234,9 +234,7 @@ const app = Sammy('#main', function () {
     this.post('#/catalog/:id', () => false);
 
     this.get('#/delete/:id', deleteHandler);
-
-    // this.post('#/catalog/:id', () => false);
-    // this.get('#/catalog/:id', commentsHandler);
+    
     this.post('#/catalog/:id', () => false);
     this.get('#/catalog/:id', commentsHandler);
     
